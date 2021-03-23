@@ -5,12 +5,16 @@ import {Component, OnInit} from '@angular/core';
     template: `
         <div class="navbar is-dark is-bold">
             <div class="navbar-brand">
-                Duccsite 1.0
+                <div class="navbar-item">
+                    Yet another Planner
+                </div>
             </div>
+
             <!-- menu -->
             <div class="navbar-menu">
-                <div class="navbar-start">
+                <div class="navbar-end">
                     <a class="navbar-item" routerLink="/">Home</a>
+                    <a class="navbar-item" routerLink="/github">Github</a>
                     <a class="navbar-item" routerLink="/info">Info</a>
                 </div>
             </div>
