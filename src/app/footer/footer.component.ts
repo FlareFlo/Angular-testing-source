@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div class="container content has-text-centered">
       Quackium text
-      <p>Made with ducc(3)</p>
+      <p>Made with ducc(4)</p>
       <img src="/assets/duck_header.jpg" style="width: 10vw; min-width: 100px" alt="image">
     </div>
   `,
