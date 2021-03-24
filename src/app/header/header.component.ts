@@ -5,16 +5,20 @@ import {Component, OnInit} from '@angular/core';
     template: `
         <!-- menu -->
         <div class="navbar is-dark">
-            <nav class="navbar-brand">
-                <div class="navbar-menu is-active">
-                    <div class="navbar-end">
+            <div class="navbar-brand">
+                <div class="navbar-menu is-active is-dark">
+                    <div class="navbar-start">
                         <a class="navbar-item" routerLink="/">Home</a>
-                        <a class="navbar-item" routerLink="/github">Github</a>
                         <a class="navbar-item" routerLink="/info">Info</a>
                     </div>
-                </div>
-            </nav>
-        </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
+                        </a>
+                        <div class="navbar-dropdown is-dark">
+                            <a class="navbar-item" routerLink="/github">Github</a>
+                        </div>
+                    </div>
     `,
     styles: []
 })
