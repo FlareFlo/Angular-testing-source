@@ -3,21 +3,17 @@ import {Component, OnInit} from '@angular/core';
 @Component({
     selector: 'app-header',
     template: `
-        <div class="navbar is-dark is-bold">
-            <div class="navbar-brand">
-                <div class="navbar-item">
-                    Yet another Planner
+        <!-- menu -->
+        <div class="navbar is-dark">
+            <nav class="navbar-brand">
+                <div class="navbar-menu is-active">
+                    <div class="navbar-end">
+                        <a class="navbar-item" routerLink="/">Home</a>
+                        <a class="navbar-item" routerLink="/github">Github</a>
+                        <a class="navbar-item" routerLink="/info">Info</a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- menu -->
-            <div class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item" routerLink="/">Home</a>
-                    <a class="navbar-item" routerLink="/github">Github</a>
-                    <a class="navbar-item" routerLink="/info">Info</a>
-                </div>
-            </div>
+            </nav>
         </div>
     `,
     styles: []
